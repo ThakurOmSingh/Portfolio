@@ -12,7 +12,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
+import { PiCertificate } from "react-icons/pi";
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -84,12 +84,23 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                to="/certificates"
+                onClick={() => updateExpanded(false)}
+              >
+                <PiCertificate style={{ marginBottom: "2px" }} /> Certificates
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
+
 
             <Nav.Item>
               <Nav.Link

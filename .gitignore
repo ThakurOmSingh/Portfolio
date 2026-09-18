@@ -1,0 +1,7 @@
+
+node_modules/
+.DS_store
+src/.DS_Store
+src/Assets/.DS_Store
+src/Assets/Certificates/.DS_Store
+package-lock.backup.json
